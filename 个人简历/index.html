@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title>个人简历</title>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 0 auto;
+      background-color: #f8f9fa;
+    }
+
+    th,
+    td {
+      border: 1px solid #d8ff82;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #b4ff85;
+      font-weight: bold;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+	li{
+		list-style-type: georgian;
+		padding: 0%;
+	}
+	tr:hover{
+		background-color: lightblue;
+	}
+  </style>
+</head>
+
+<body>
+
+  <h1>个人简历</h1>
+
+  <table>
+    <tr>
+      <th>项目</th>
+      <th>详情</th>
+    </tr>
+    <tr>
+      <td>基本信息</td>
+      <td>
+        <p>姓名：[李德旺]</p>
+        <p>联系方式：[电话/邮箱]</p>
+      </td>
+    </tr>
+    <tr>
+      <td>教育背景</td>
+      <td>
+        <p>学校：[学校名称]，[学位]，[毕业时间]</p>
+      </td>
+    </tr>
+    <tr>
+      <td>工作经历</td>
+      <td>
+        <p>[公司名称]，[职位]，[入职时间]-[离职时间]</p>
+      </td>
+    </tr>
+    <tr>
+      <td>技能</td>
+      <td>
+        <ul>
+          <li>[技能 1]</li>
+          <li>[技能 2]</li>
+          <li>[技能 3]</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+<script>
+function changeColor(row){
+	row.style.backgroundColor='lightblue';
+}
+    const tableRows = document.getElementsByTagName('tr');
+    for (let i = 0; i < tableRows.length; i++) {
+      tableRows[i].addEventListener('click', function () {
+        changeColor(this);
+      });
+    }
+  </script>
+</body>
+
+</html>
